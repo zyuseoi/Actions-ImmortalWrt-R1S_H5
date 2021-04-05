@@ -20,6 +20,7 @@ rm -f ./.config*
 touch ./.config
 
 # 自定义配置
+cat >> .config <<EOF
 CONFIG_MODULES=y
 CONFIG_HAVE_DOT_CONFIG=y
 CONFIG_TARGET_sunxi=y
@@ -1830,3 +1831,6 @@ CONFIG_XRAY_CORE_PROVIDE_V2RAY_CORE=y
 CONFIG_boost-runtime-shared=y
 CONFIG_boost-static-and-shared-libs=y
 CONFIG_boost-variant-release=y
+EOF
+
+sed -i 's/^[ \t]*//g' ./.config
