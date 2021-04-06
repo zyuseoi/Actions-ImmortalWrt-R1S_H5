@@ -6,8 +6,8 @@ on:
     - cron: 0 7 * * 5
     
 # 点赞触发
-#   watch:
-#     types: [started]
+  watch:
+    types: [started]
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
@@ -110,13 +110,18 @@ jobs:
       id: organize
       if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
-          rm -rf ./artifact/
-          mkdir -p ./artifact/
-          find openwrt/bin/targets/ -name "*combined*img*" | xargs -i mv -f {} ./artifact/
-          find openwrt/bin/targets/ -name "*uefi*img*" | xargs -i mv -f {} ./artifact/
+        cd openwrt/bin/targets/*/*
+        rm -rf packages
+        echo "FIRMWARE=$PWD" >> $GITHUB_ENV
+        echo "::set-output name=status::success"
           
     - name: 上载固件目录
       uses: actions/upload-artifact@main
+      if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
-        name: OpenWrt-Actions-DIY
-        path: ./artifact/
+        name: OpenWrt_firmware${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
+        path: ${{ env.FIRMWARE }}
+
+
+
+
