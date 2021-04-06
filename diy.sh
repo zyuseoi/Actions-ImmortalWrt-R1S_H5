@@ -91,7 +91,7 @@ CONFIG_DEFAULT_base-files=y
 CONFIG_DEFAULT_block-mount=y
 CONFIG_DEFAULT_busybox=y
 CONFIG_DEFAULT_ca-certificates=y
-CONFIG_DEFAULT_ddns-scripts_aliyun=y
+# CONFIG_DEFAULT_ddns-scripts_aliyun is not set
 CONFIG_DEFAULT_ddns-scripts_dnspod=y
 CONFIG_DEFAULT_default-settings=y
 CONFIG_DEFAULT_dnsmasq-full=y
@@ -119,17 +119,17 @@ CONFIG_DEFAULT_luci-app-accesscontrol=y
 CONFIG_DEFAULT_luci-app-adbyby-plus=y
 CONFIG_DEFAULT_luci-app-arpbind=y
 CONFIG_DEFAULT_luci-app-autoreboot=y
-CONFIG_DEFAULT_luci-app-cpufreq=y
+# CONFIG_DEFAULT_luci-app-cpufreq is not set
 CONFIG_DEFAULT_luci-app-ddns=y
-CONFIG_DEFAULT_luci-app-filetransfer=y
+# CONFIG_DEFAULT_luci-app-filetransfer is not set
 CONFIG_DEFAULT_luci-app-nlbwmon=y
 CONFIG_DEFAULT_luci-app-ramfree=y
 CONFIG_DEFAULT_luci-app-ssr-plus=y
 CONFIG_DEFAULT_luci-app-turboacc=y
-CONFIG_DEFAULT_luci-app-unblockmusic=y
+# CONFIG_DEFAULT_luci-app-unblockmusic is not set
 CONFIG_DEFAULT_luci-app-upnp=y
-CONFIG_DEFAULT_luci-app-vlmcsd=y
-CONFIG_DEFAULT_luci-app-vsftpd=y
+# CONFIG_DEFAULT_luci-app-vlmcsd= is not set
+# CONFIG_DEFAULT_luci-app-vsftpd is not set
 CONFIG_DEFAULT_luci-app-wol=y
 CONFIG_DEFAULT_mkf2fs=y
 CONFIG_DEFAULT_mtd=y
@@ -4554,9 +4554,9 @@ CONFIG_PACKAGE_luci-app-adbyby-plus=y
 # CONFIG_PACKAGE_luci-app-aliddns is not set
 # CONFIG_PACKAGE_luci-app-amule is not set
 # CONFIG_PACKAGE_luci-app-appfilter is not set
-CONFIG_PACKAGE_luci-app-argon-config=y
+# CONFIG_PACKAGE_luci-app-argon-config is not set
 # CONFIG_PACKAGE_luci-app-aria2 is not set
-# CONFIG_PACKAGE_luci-app-arpbind is not set
+CONFIG_PACKAGE_luci-app-arpbind=y
 # CONFIG_PACKAGE_luci-app-asterisk is not set
 # CONFIG_PACKAGE_luci-app-attendedsysupgrade is not set
 # CONFIG_PACKAGE_luci-app-autoipsetadder is not set
@@ -4576,12 +4576,12 @@ CONFIG_PACKAGE_luci-app-autoreboot=y
 # CONFIG_PACKAGE_luci-app-cjdns is not set
 # CONFIG_PACKAGE_luci-app-clamav is not set
 # CONFIG_PACKAGE_luci-app-commands is not set
-CONFIG_PACKAGE_luci-app-cpufreq=y
+# CONFIG_PACKAGE_luci-app-cpufreq is not set
 # CONFIG_PACKAGE_luci-app-cpulimit is not set
 # CONFIG_PACKAGE_luci-app-cshark is not set
 # CONFIG_PACKAGE_luci-app-cupsd is not set
 # CONFIG_PACKAGE_luci-app-dawn is not set
-# CONFIG_PACKAGE_luci-app-ddns is not set
+CONFIG_PACKAGE_luci-app-ddns=y
 # CONFIG_PACKAGE_luci-app-diag-core is not set
 # CONFIG_PACKAGE_luci-app-diskman is not set
 # CONFIG_PACKAGE_luci-app-diskman_INCLUDE_btrfs_progs is not set
@@ -4598,7 +4598,7 @@ CONFIG_PACKAGE_luci-app-cpufreq=y
 # CONFIG_PACKAGE_luci-app-familycloud is not set
 # CONFIG_PACKAGE_luci-app-fileassistant is not set
 # CONFIG_PACKAGE_luci-app-filebrowser is not set
-CONFIG_PACKAGE_luci-app-filetransfer=y
+# CONFIG_PACKAGE_luci-app-filetransfer is not set
 CONFIG_PACKAGE_luci-app-firewall=y
 # CONFIG_PACKAGE_luci-app-frpc is not set
 # CONFIG_PACKAGE_luci-app-frps is not set
@@ -4732,7 +4732,7 @@ CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Xray=y
 # CONFIG_PACKAGE_luci-app-transmission is not set
 # CONFIG_PACKAGE_luci-app-travelmate is not set
 # CONFIG_PACKAGE_luci-app-trojan-server is not set
-CONFIG_PACKAGE_luci-app-ttyd=y
+# CONFIG_PACKAGE_luci-app-ttyd is not set
 CONFIG_PACKAGE_luci-app-turboacc=y
 CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_shortcut-fe=y
 CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_bbr-cca=y
@@ -4740,9 +4740,9 @@ CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_dnsforwarder=y
 # CONFIG_PACKAGE_luci-app-udp2raw is not set
 # CONFIG_PACKAGE_luci-app-udpxy is not set
 # CONFIG_PACKAGE_luci-app-uhttpd is not set
-CONFIG_PACKAGE_luci-app-unblockmusic=y
-CONFIG_UnblockNeteaseMusic_Go=y
-CONFIG_UnblockNeteaseMusic_NodeJS=y
+# CONFIG_PACKAGE_luci-app-unblockmusic is not set
+# CONFIG_UnblockNeteaseMusic_Go is not set
+# CONFIG_UnblockNeteaseMusic_NodeJS is not set
 # CONFIG_PACKAGE_luci-app-unblockneteasemusic is not set
 # CONFIG_PACKAGE_luci-app-unblockneteasemusic-go is not set
 # CONFIG_PACKAGE_luci-app-unblockneteasemusic-mini is not set
@@ -4750,14 +4750,14 @@ CONFIG_UnblockNeteaseMusic_NodeJS=y
 CONFIG_PACKAGE_luci-app-upnp=y
 # CONFIG_PACKAGE_luci-app-usb-printer is not set
 # CONFIG_PACKAGE_luci-app-usb3disable is not set
-CONFIG_PACKAGE_luci-app-uugamebooster=y
+# CONFIG_PACKAGE_luci-app-uugamebooster is not set
 # CONFIG_PACKAGE_luci-app-v2ray-server is not set
 # CONFIG_PACKAGE_luci-app-verysync is not set
-CONFIG_PACKAGE_luci-app-vlmcsd=y
+# CONFIG_PACKAGE_luci-app-vlmcsd is not set
 # CONFIG_PACKAGE_luci-app-vnstat is not set
 # CONFIG_PACKAGE_luci-app-vpn-policy-routing is not set
 # CONFIG_PACKAGE_luci-app-vpnbypass is not set
-CONFIG_PACKAGE_luci-app-vsftpd=y
+# CONFIG_PACKAGE_luci-app-vsftpd is not set
 # CONFIG_PACKAGE_luci-app-vssr is not set
 # CONFIG_PACKAGE_luci-app-vssr_INCLUDE_Kcptun is not set
 # CONFIG_PACKAGE_luci-app-vssr_INCLUDE_ShadowsocksR_Server is not set
@@ -4772,8 +4772,8 @@ CONFIG_PACKAGE_luci-app-vsftpd=y
 # CONFIG_PACKAGE_luci-app-wireguard is not set
 CONFIG_PACKAGE_luci-app-wol=y
 # CONFIG_PACKAGE_luci-app-wrtbwmon is not set
-CONFIG_PACKAGE_luci-app-xlnetacc=y
-CONFIG_PACKAGE_luci-app-zerotier=y
+# CONFIG_PACKAGE_luci-app-xlnetacc is not set
+# CONFIG_PACKAGE_luci-app-zerotier is not set
 # end of 3. Applications
 
 #
@@ -4787,7 +4787,7 @@ CONFIG_PACKAGE_luci-app-zerotier=y
 # CONFIG_PACKAGE_luci-theme-argon-mc is not set
 # CONFIG_PACKAGE_luci-theme-argon-mod is not set
 # CONFIG_PACKAGE_luci-theme-argonv2 is not set
-CONFIG_PACKAGE_luci-theme-argonv3=y
+CONFIG_PACKAGE_luci-theme-argon=y
 # CONFIG_PACKAGE_luci-theme-atmaterial is not set
 CONFIG_PACKAGE_luci-theme-bootstrap=y
 # CONFIG_PACKAGE_luci-theme-bootstrap-mod is not set
@@ -4867,8 +4867,8 @@ CONFIG_PACKAGE_luci-i18n-base-en=y
 # CONFIG_PACKAGE_luci-i18n-base-vi is not set
 CONFIG_PACKAGE_luci-i18n-base-zh-cn=y
 # CONFIG_PACKAGE_luci-i18n-base-zh-tw is not set
-CONFIG_PACKAGE_luci-i18n-cpufreq-zh-cn=y
-CONFIG_PACKAGE_luci-i18n-filetransfer-zh-cn=y
+# CONFIG_PACKAGE_luci-i18n-cpufreq-zh-cn is not set
+# CONFIG_PACKAGE_luci-i18n-filetransfer-zh-cn is not set
 # CONFIG_PACKAGE_luci-i18n-firewall-ca is not set
 # CONFIG_PACKAGE_luci-i18n-firewall-cs is not set
 # CONFIG_PACKAGE_luci-i18n-firewall-de is not set
@@ -4902,7 +4902,7 @@ CONFIG_PACKAGE_luci-i18n-ramfree-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-ssr-plus-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-turboacc-zh-cn=y
-CONFIG_PACKAGE_luci-i18n-unblockmusic-zh-cn=y
+# CONFIG_PACKAGE_luci-i18n-unblockmusic-zh-cn is not set
 # CONFIG_PACKAGE_luci-i18n-upnp-ca is not set
 # CONFIG_PACKAGE_luci-i18n-upnp-cs is not set
 # CONFIG_PACKAGE_luci-i18n-upnp-de is not set
@@ -4928,14 +4928,14 @@ CONFIG_PACKAGE_luci-i18n-upnp-en=y
 # CONFIG_PACKAGE_luci-i18n-upnp-vi is not set
 CONFIG_PACKAGE_luci-i18n-upnp-zh-cn=y
 # CONFIG_PACKAGE_luci-i18n-upnp-zh-tw is not set
-CONFIG_PACKAGE_luci-i18n-uugamebooster-zh-cn=y
-CONFIG_PACKAGE_luci-i18n-vlmcsd-zh-cn=y
-CONFIG_PACKAGE_luci-i18n-vsftpd-zh-cn=y
+# CONFIG_PACKAGE_luci-i18n-uugamebooster-zh-cn is not set
+# CONFIG_PACKAGE_luci-i18n-vlmcsd-zh-cn is not set
+# CONFIG_PACKAGE_luci-i18n-vsftpd-zh-cn is not set
 # CONFIG_PACKAGE_luci-i18n-wol-ca is not set
 # CONFIG_PACKAGE_luci-i18n-wol-cs is not set
 # CONFIG_PACKAGE_luci-i18n-wol-de is not set
 # CONFIG_PACKAGE_luci-i18n-wol-el is not set
-CONFIG_PACKAGE_luci-i18n-wol-en=y
+# CONFIG_PACKAGE_luci-i18n-wol-en is not set
 # CONFIG_PACKAGE_luci-i18n-wol-es is not set
 # CONFIG_PACKAGE_luci-i18n-wol-fr is not set
 # CONFIG_PACKAGE_luci-i18n-wol-he is not set
@@ -4954,9 +4954,9 @@ CONFIG_PACKAGE_luci-i18n-wol-en=y
 # CONFIG_PACKAGE_luci-i18n-wol-tr is not set
 # CONFIG_PACKAGE_luci-i18n-wol-uk is not set
 # CONFIG_PACKAGE_luci-i18n-wol-vi is not set
-CONFIG_PACKAGE_luci-i18n-wol-zh-cn=y
+# CONFIG_PACKAGE_luci-i18n-wol-zh-cn is not set
 # CONFIG_PACKAGE_luci-i18n-wol-zh-tw is not set
-CONFIG_PACKAGE_luci-i18n-zerotier-zh-cn=y
+# CONFIG_PACKAGE_luci-i18n-zerotier-zh-cn is not set
 # end of LuCI
 
 #
@@ -5015,10 +5015,10 @@ CONFIG_POSTFIX_PCRE=y
 # CONFIG_PACKAGE_oggfwd is not set
 # end of Streaming
 
-CONFIG_PACKAGE_UnblockNeteaseMusic=y
-CONFIG_PACKAGE_UnblockNeteaseMusic-Go=y
+# CONFIG_PACKAGE_UnblockNeteaseMusic is not set
+# CONFIG_PACKAGE_UnblockNeteaseMusic-Go is not set
 # CONFIG_UNBLOCKNETEASEMUSIC_GO_COMPRESS_GOPROXY is not set
-CONFIG_UNBLOCKNETEASEMUSIC_GO_COMPRESS_UPX=y
+# CONFIG_UNBLOCKNETEASEMUSIC_GO_COMPRESS_UPX is not set
 # CONFIG_PACKAGE_annie is not set
 # CONFIG_ANNIE_COMPRESS_GOPROXY is not set
 CONFIG_ANNIE_COMPRESS_UPX=y
@@ -5144,7 +5144,7 @@ CONFIG_GOWEBDAV_COMPRESS_UPX=y
 # CONFIG_PACKAGE_rsync is not set
 # CONFIG_PACKAGE_rsyncd is not set
 # CONFIG_PACKAGE_vsftpd is not set
-CONFIG_PACKAGE_vsftpd-alt=y
+# CONFIG_PACKAGE_vsftpd-alt is not set
 # CONFIG_PACKAGE_vsftpd-tls is not set
 # CONFIG_PACKAGE_webdav-go is not set
 # CONFIG_WEBDAV_GO_COMPRESS_GOPROXY is not set
@@ -5287,7 +5287,7 @@ CONFIG_PACKAGE_miniupnpd=y
 # CONFIG_PACKAGE_chinadns is not set
 # CONFIG_PACKAGE_chinadns-ng is not set
 CONFIG_PACKAGE_ddns-scripts=y
-CONFIG_PACKAGE_ddns-scripts_aliyun=y
+# CONFIG_PACKAGE_ddns-scripts_aliyun is not set
 # CONFIG_PACKAGE_ddns-scripts_cloudflare.com-v4 is not set
 # CONFIG_PACKAGE_ddns-scripts_cnkuai_cn is not set
 # CONFIG_PACKAGE_ddns-scripts_digitalocean.com-v2 is not set
@@ -5680,7 +5680,7 @@ CONFIG_PACKAGE_ip-full=y
 # CONFIG_PACKAGE_vpnc-scripts is not set
 # CONFIG_PACKAGE_wireguard-tools is not set
 # CONFIG_PACKAGE_xl2tpd is not set
-CONFIG_PACKAGE_zerotier=y
+# CONFIG_PACKAGE_zerotier is not set
 
 #
 # Configuration
@@ -6051,7 +6051,7 @@ CONFIG_PACKAGE_ppp-mod-pppoe=y
 # CONFIG_PACKAGE_simple-adblock is not set
 CONFIG_PACKAGE_simple-obfs-client=y
 # CONFIG_PACKAGE_simple-obfs-server is not set
-# CONFIG_PACKAGE_smartdns is not set
+CONFIG_PACKAGE_smartdns=y
 # CONFIG_PACKAGE_smbinfo is not set
 # CONFIG_PACKAGE_snmp-mibs is not set
 # CONFIG_PACKAGE_snmp-utils is not set
@@ -6088,13 +6088,13 @@ CONFIG_PACKAGE_uclient-fetch=y
 # CONFIG_PACKAGE_ulogd is not set
 # CONFIG_PACKAGE_umdns is not set
 # CONFIG_PACKAGE_usbip is not set
-CONFIG_PACKAGE_uugamebooster=y
+# CONFIG_PACKAGE_uugamebooster is not set
 # CONFIG_PACKAGE_v2ray-plugin is not set
 # CONFIG_V2RAY_PLUGIN_COMPRESS_GOPROXY is not set
 CONFIG_V2RAY_PLUGIN_COMPRESS_UPX=y
 # CONFIG_PACKAGE_vallumd is not set
 # CONFIG_PACKAGE_verysync is not set
-CONFIG_PACKAGE_vlmcsd=y
+# CONFIG_PACKAGE_vlmcsd is not set
 # CONFIG_PACKAGE_vncrepeater is not set
 # CONFIG_PACKAGE_vnstat is not set
 # CONFIG_PACKAGE_vpn-policy-routing is not set
