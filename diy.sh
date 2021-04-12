@@ -11,7 +11,7 @@ cd openwrt
 git clone https://github.com/liuran001/openwrt-packages
 
 # 自定义主机名
-sed -i 's/ImmortalWrt/OpenWrt/g' package/base-files/files/bin/config_generate
+sed -i 's/Immortal/Open/g' package/base-files/files/bin/config_generate
 # 自定义后台地址
 sed -i 's#192.168.1.1#192.168.2.101#g' package/base-files/files/bin/config_generate
 # 自定义取消密码
