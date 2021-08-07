@@ -89,7 +89,7 @@ CONFIG_DEFAULT_block-mount=y
 CONFIG_DEFAULT_busybox=y
 CONFIG_DEFAULT_ca-certificates=y
 # CONFIG_DEFAULT_ddns-scripts_aliyun is not set
-CONFIG_DEFAULT_ddns-scripts_dnspod=y
+# CONFIG_DEFAULT_ddns-scripts_dnspod is not set
 CONFIG_DEFAULT_default-settings=y
 CONFIG_DEFAULT_dnsmasq-full=y
 CONFIG_DEFAULT_dropbear=y
@@ -117,7 +117,7 @@ CONFIG_DEFAULT_luci-app-adbyby-plus=y
 CONFIG_DEFAULT_luci-app-arpbind=y
 CONFIG_DEFAULT_luci-app-autoreboot=y
 # CONFIG_DEFAULT_luci-app-cpufreq is not set
-CONFIG_DEFAULT_luci-app-ddns=y
+# CONFIG_DEFAULT_luci-app-ddns is not set
 # CONFIG_DEFAULT_luci-app-filetransfer is not set
 # CONFIG_DEFAULT_luci-app-nlbwmon is not set
 CONFIG_DEFAULT_luci-app-ramfree=y
@@ -4579,7 +4579,7 @@ CONFIG_PACKAGE_luci-app-autoreboot=y
 # CONFIG_PACKAGE_luci-app-cshark is not set
 # CONFIG_PACKAGE_luci-app-cupsd is not set
 # CONFIG_PACKAGE_luci-app-dawn is not set
-CONFIG_PACKAGE_luci-app-ddns=y
+# CONFIG_PACKAGE_luci-app-ddns is not set
 # CONFIG_PACKAGE_luci-app-diag-core is not set
 # CONFIG_PACKAGE_luci-app-diskman is not set
 # CONFIG_PACKAGE_luci-app-diskman_INCLUDE_btrfs_progs is not set
@@ -5283,12 +5283,12 @@ CONFIG_PACKAGE_miniupnpd=y
 # CONFIG_PACKAGE_bind-tools is not set
 # CONFIG_PACKAGE_chinadns is not set
 # CONFIG_PACKAGE_chinadns-ng is not set
-CONFIG_PACKAGE_ddns-scripts=y
+# CONFIG_PACKAGE_ddns-scripts is not set
 # CONFIG_PACKAGE_ddns-scripts_aliyun is not set
 # CONFIG_PACKAGE_ddns-scripts_cloudflare.com-v4 is not set
 # CONFIG_PACKAGE_ddns-scripts_cnkuai_cn is not set
 # CONFIG_PACKAGE_ddns-scripts_digitalocean.com-v2 is not set
-CONFIG_PACKAGE_ddns-scripts_dnspod=y
+# CONFIG_PACKAGE_ddns-scripts_dnspod is not set
 # CONFIG_PACKAGE_ddns-scripts_freedns_42_pl is not set
 # CONFIG_PACKAGE_ddns-scripts_godaddy.com-v1 is not set
 # CONFIG_PACKAGE_ddns-scripts_no-ip_com is not set
