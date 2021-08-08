@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# 取消对提要源的注释
+# sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+
+# 添加源
+# sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+
 # 添加软件包
 cd openwrt
 git clone https://github.com/liuran001/openwrt-packages
