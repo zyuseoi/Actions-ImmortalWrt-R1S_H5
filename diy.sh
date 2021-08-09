@@ -118,9 +118,9 @@ CONFIG_DEFAULT_libustream-openssl=y
 CONFIG_DEFAULT_logd=y
 CONFIG_DEFAULT_luci=y
 CONFIG_DEFAULT_luci-app-accesscontrol=y
-CONFIG_DEFAULT_luci-app-adbyby-plus=y
 CONFIG_DEFAULT_luci-app-arpbind=y
 CONFIG_DEFAULT_luci-app-autoreboot=y
+# CONFIG_DEFAULT_luci-app-adbyby-plus is not set
 # CONFIG_DEFAULT_luci-app-cpufreq is not set
 # CONFIG_DEFAULT_luci-app-ddns is not set
 # CONFIG_DEFAULT_luci-app-filetransfer is not set
@@ -4545,7 +4545,7 @@ CONFIG_PACKAGE_luci-mod-admin-full=y
 # CONFIG_PACKAGE_luci-app-accesscontrol is not set
 # CONFIG_PACKAGE_luci-app-acme is not set
 # CONFIG_PACKAGE_luci-app-adblock is not set
-CONFIG_PACKAGE_luci-app-adbyby-plus=y
+# CONFIG_PACKAGE_luci-app-adbyby-plus is not set
 # CONFIG_PACKAGE_luci-app-openclash is not set
 # CONFIG_PACKAGE_luci-app-adguardhome is not set
 # CONFIG_PACKAGE_luci-app-adguardhome_INCLUDE_binary is not set
@@ -4840,7 +4840,7 @@ CONFIG_PACKAGE_luci-lib-nixio=y
 # end of 6. Libraries
 
 CONFIG_PACKAGE_default-settings=y
-CONFIG_PACKAGE_luci-i18n-adbyby-plus-zh-cn=y
+# CONFIG_PACKAGE_luci-i18n-adbyby-plus-zh-cn is not set
 # CONFIG_PACKAGE_luci-i18n-argon-config-zh-cn is not set
 CONFIG_PACKAGE_luci-i18n-autoreboot-zh-cn=y
 # CONFIG_PACKAGE_luci-i18n-base-ca is not set
@@ -5854,7 +5854,7 @@ CONFIG_PACKAGE_wpad-basic=y
 # CONFIG_PACKAGE_acme is not set
 # CONFIG_PACKAGE_acme-dnsapi is not set
 # CONFIG_PACKAGE_adblock is not set
-CONFIG_PACKAGE_adbyby=y
+# CONFIG_PACKAGE_adbyby is not set
 # CONFIG_PACKAGE_addrwatch is not set
 # CONFIG_PACKAGE_adguardhome is not set
 # CONFIG_ADGUARDHOME_COMPRESS_GOPROXY is not set
