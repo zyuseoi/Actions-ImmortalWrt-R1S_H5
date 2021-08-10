@@ -115,7 +115,6 @@ jobs:
 
     - name: 组织文件
       id: organize
-      if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
           rm -rf ./artifact/
           mkdir -p ./artifact/
@@ -124,7 +123,6 @@ jobs:
                   
     - name: 上载固件目录
       uses: actions/upload-artifact@main
-      if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
         name: ImmortalWrt-R1S_H5
         path: ./artifact/
