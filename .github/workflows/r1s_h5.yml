@@ -1,6 +1,5 @@
 name: OpenWrt R1S_H5
 
-on:
 # 定时触发(每周五15点)
   schedule:
     - cron: 0 7 * * 5
@@ -8,6 +7,15 @@ on:
 # 点赞触发
   watch:
     types: [started]
+
+on:
+  repository_dispatch:
+  workflow_dispatch:
+    inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'false'
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
@@ -24,8 +32,8 @@ env:
 jobs:
   build:
     name: 开始编译
+    runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
-    runs-on: ubuntu-18.04
 
     steps:
     - name: 校验
@@ -56,10 +64,7 @@ jobs:
 
     - name: 安装源
       run: cd openwrt && ./scripts/feeds install -a
-      
-    - name: 再次安装源
-      run: cd openwrt && ./scripts/feeds install -a
-        
+              
     - name: 加载自定义配置
       run: |
         [ -e files ] && mv files openwrt/files
