@@ -11,7 +11,7 @@ on:
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
-  REPO_BRANCH: openwrt-18.06-k5.4
+  REPO_BRANCH: openwrt-21.02
   CONFIG_FILE: .config
   DIY_SH: diy.sh
   UPLOAD_BIN_DIR: false
