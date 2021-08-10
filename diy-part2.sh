@@ -10,8 +10,10 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
+# 自定义主机名
+sed -i 's/ImmortalWrt/OpenWrt/g' package/base-files/files/bin/config_generate
 # 自定义后台地址
 sed -i 's#192.168.1.1#192.168.2.101#g' package/base-files/files/bin/config_generate
 # 自定义取消密码
-sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings
+sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/emortal/default-settings/files/zzz-default-settings
 
