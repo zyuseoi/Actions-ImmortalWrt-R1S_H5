@@ -1,4 +1,4 @@
-name: OpenWrt R1S_H5
+name: ImmortalWrt-R1S-H5
 
 on:
 # 定时触发(每周五15点)
