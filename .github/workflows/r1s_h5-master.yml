@@ -11,7 +11,7 @@ on:
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
-  REPO_BRANCH: openwrt-21.02
+  REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
   DIY_P1_SH: diy-part1.sh
@@ -118,8 +118,7 @@ jobs:
       run: |
           rm -rf ./artifact/
           mkdir -p ./artifact/
-          find openwrt/bin/targets/ -name "*h5*img*" | xargs -i mv -f {} ./artifact/
-          find openwrt/bin/targets/ -name "*squashfs*img*" | xargs -i mv -f {} ./artifact/
+          find openwrt/bin/targets/ -name "*h5-squashfs*img*" | xargs -i mv -f {} ./artifact/
                   
     - name: 上载固件目录
       uses: actions/upload-artifact@main
