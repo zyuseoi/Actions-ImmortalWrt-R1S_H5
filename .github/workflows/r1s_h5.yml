@@ -2,8 +2,8 @@ name: ImmortalWrt-R1S-H5
 
 on:
 # 定时触发(每周五15点)
-  schedule:
-    - cron: 0 7 * * 5
+#   schedule:
+#     - cron: 0 7 * * 5
     
 # 点赞触发
   watch:
